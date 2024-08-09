@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+    <html>
+    
+        <head>
+    
+        <meta charset="utf-8">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!--Title-->
+        <title>
+    
+            Fresh Mart
+    
+        </title>
+    
+        <!--Stylesheet-->
+        <link rel="stylesheet" type="text/css" href="./fruits.css">
+    
+        <!--Fav-icon-->
+        <link rel="shortcut icon" href="images/fav-icon.png"/>
+    
+        <!--Using-Font-Awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+            
+       <link rel="shortcut icon" type="image/jpg" href="C:\Users\hp\Desktop\College\First Semester\Introduction To Web Technologies\Notepad ++ Files\Project\favicon.ico"/>
+    
+        </head>
+    
+        <body>
+    
+            <!--Navigation-->
+            <nav class="navigation">
+    
+                <!--logo-->
+                <a href="#" class="logo">FM</a>
+    
+
+                
+             
+    
+                <!--menu-->
+                <ul class="menu">
+    
+                    <li>
+                        <a href="./fruits.html" class="active">
+                            
+                            Fruits
+    
+                        </a>
+                        <li>
+    
+                            <a href="./vegetables.html">
+        
+                                Vegetables
+        
+                            </a>
+        
+                        </li>
+        
+                    
+                    </li>
+    
+                    <li>
+    
+                        <a href="./baking and cooking.html">
+    
+                            Baking & Cooking
+                        
+                        </a>
+                    
+                    </li>
+    
+                   
+                    <li>
+                        
+                        <a href="./meat and seafood.html">
+                            
+                            Meat & seafood
+                        
+                        </a>
+                    
+                    </li>
+                    
+                    <li>
+                        
+                        <a href="./dairy.html">
+                            
+                            Dairy
+                        
+                        </a>
+                  
+
+                   
+    
+                    </ul>
+    
+              
+                  
+                </section>
+    
+            </nav>
+            
+            
+            
+            <!--nav-end-->
+
+            <section id="fruits-product">
+                <!--heading----------->
+                <div class="product-heading">
+                    <h2 class = 'fruits-heading'>Fruits</h2>
+                </div>
+                <!--box-container------>
+                <div class="product-container">
+                    <!--box---------->
+                    <div class="product-box">
+                        <img alt="Apple" src="./images/apple-fruit.jpg">
+                        <h4>Apple</h4>
+                        <h4>1KG</h4>
+                        <h3>$2</h3>
+                        <div class="item">
+                            <label>Apples (per Kg): <input type="number" id="apples" min="0" step="1"></label>
+                            <button onclick="addItem('Apples', 'apples', 2)">Add</button>
+                        </div>
+                        <button id="save-fav" onclick="saveFavourite()">Save as Favourite</button>
+                        <button id="apply-fav" onclick="applyFavourite()">Apply Favourites</button>
+                       
+                    </div>
+                    <!--box---------->
+                    <div class="product-box">
+                        <img alt="Banana" src="./images/banana.webp">
+                        <h4>Banana</h4>
+                        <h4>1KG</h4>
+                        <h3>$1</h3>
+                       <div class="item">
+                <label>Bananas(per Kg): <input type="number" id="bananas" min="0" step="1"></label>
+                <button onclick="addItem('Bananas', 'bananas', 1)">Add</button>
+            </div>
+            <button id="save-fav" onclick="saveFavourite()">Save as Favourite</button>
+            <button id="apply-fav" onclick="applyFavourite()">Apply Favourites</button>
+                        
+                    
+                    </div>
+                    <!--box---------->
+                    <div class="product-box">
+                        <img alt="orange" src="./images/orange_342874121.jpg">
+                        <h4>Orange</h4>
+                        <h4>1KG</h4>
+                        <h3>$0.5</h3>
+                        <div class="item">
+                            <label>orange  (per Kg): <input type="number" id="orange" min="0" step="1"></label>
+                            <button onclick="addItem('Orange', 'orange', 0.5)">Add</button>
+                        </div>
+                        <button id="save-fav" onclick="saveFavourite()">Save as Favourite</button>
+                        <button id="apply-fav" onclick="applyFavourite()">Apply Favourites</button>
+                        
+                       
+                       
+                    </div>
+                    <!--box---------->
+                    <div class="product-box">
+                        <img alt="guava" src="./images/guava-stock-2-600x600.jpg">
+                        <h4>Guava</h4>
+                        <h4>1KG</h4>
+                        <h3>$0.7</h3>
+                        <div class="item">
+                            <label> Guava (per Kg): <input type="number" id="guava" min="0" step="1"></label>
+                            <button onclick="addItem('Guavas', 'guavas', 0.7)">Add</button>
+                        </div>
+                        <button id="save-fav" onclick="saveFavourite()">Save as Favourite</button>
+                        <button id="apply-fav" onclick="applyFavourite()">Apply Favourites</button>
+                      
+                       
+                    </div>
+                    <!--box---------->
+                    <div class="product-box">
+                        <img alt="grapes" src="./images/grapes.webp">
+                        <h4>Grapes</h4>
+                        <h4>1KG</h4>
+                        <h3>$1.5</h3>
+                        <div class="item">
+                            <label> grapes (per Kg): <input type="number" id="grapes" min="0" step="1"></label>
+                            <button onclick="addItem('Grapes', 'grapes', 1.5)">Add</button>
+                        </div>
+                        <button id="save-fav" onclick="saveFavourite()">Save as Favourite</button>
+                        <button id="apply-fav" onclick="applyFavourite()">Apply Favourites</button>
+                      
+                        
+                      
+                    </div>
+                    <!--box---------->
+                    <div class="product-box">
+                        <img alt="mango" src="./images/mango.jpg">
+                        <h4>Mango</h4>
+                        <h4>1Kg</h4>
+                        <h3>$0.2</h3>
+                        <div class="item">
+                            <label> Mango (per Kg): <input type="number" id="mango" min="0" step="1"></label>
+                            <button onclick="addItem('Mango', 'mango', 0.2)">Add</button>
+                        </div>
+                        <button id="save-fav" onclick="saveFavourite()">Save as Favourite</button>
+                        <button id="apply-fav" onclick="applyFavourite()">Apply Favourites</button>
+                        
+                        
+                     
+                    </div>
+                </div>
+            </section>
+
+    <!-- Order Summary Section -->
+    <section id="order-summary">
+        <h2>Order Summary</h2>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody id="order-items">
+                <!-- JavaScript will dynamically fill this section -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total</td>
+                    <td id="total-price">$0.00</td>
+                </tr>
+            </tfoot>
+        </table>
+        <button id="buy-now" onclick="goToOrderConfirmation()">Buy Now</button>
+    </section>
+    
+
+    <script src="fruits.js"></script>
+    
+    <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>About Us</h3>
+            <p>We are committed to providing fresh and high-quality groceries delivered to your doorstep.</p>
+        </div>
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="./fruits.html">Fruits</a></li>
+                <li><a href="./vegetables.html">Vegetables</a></li>
+                <li><a href="./meat and seafood.html">Meat & Seafood</a></li>
+                <li><a href="./dairy.html">Dairy</a></li>
+                <li><a href="./baking and cooking.html">Baking & Cooking</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <ul>
+                <li><i class="fas fa-phone-alt"></i> +1 234 567 890</li>
+                <li><i class="fas fa-envelope"></i> support@freshmart.com</li>
+                <li><i class="fas fa-map-marker-alt"></i> 123 Fresh Mart St, Cityville</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Fresh Mart. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+                </body>
+                </html>

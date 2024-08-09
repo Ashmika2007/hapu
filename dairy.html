@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+    <html>
+    
+        <head>
+    
+        <meta charset="utf-8">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!--Title-->
+        <title>
+    
+            Fresh Mart
+    
+        </title>
+    
+        <!--Stylesheet-->
+        <link rel="stylesheet" type="text/css" href="./fruits.css">
+    
+        <!--Fav-icon-->
+        <link rel="shortcut icon" href="images/fav-icon.png"/>
+    
+        <!--Using-Font-Awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+            
+       <link rel="shortcut icon" type="image/jpg" href="C:\Users\hp\Desktop\College\First Semester\Introduction To Web Technologies\Notepad ++ Files\Project\favicon.ico"/>
+    
+        </head>
+    
+        <body>
+    
+            <!--Navigation-->
+            <nav class="navigation">
+    
+                <!--logo-->
+                <a href="#" class="logo">FM</a>
+    
+
+                
+               
+    
+                <!--menu-->
+                <ul class="menu">
+    
+                    <li>
+                        <a href="./fruits.html" class="active">
+                            
+                            Fruits
+    
+                        </a>
+                        <li>
+    
+                            <a href="./vegetables.html">
+        
+                                Vegetables
+        
+                            </a>
+        
+                        </li>
+        
+                    
+                    </li>
+    
+                    <li>
+    
+                        <a href="./baking and cooking.html">
+    
+                            Baking & Cooking
+                        
+                        </a>
+                    
+                    </li>
+    
+                   
+                    <li>
+                        
+                        <a href="./meat and seafood.html">
+                            
+                            Meat & seafood
+                        
+                        </a>
+                    
+                    </li>
+                    
+                    <li>
+                        
+                        <a href="./dairy.html">
+                            
+                            Dairy
+                        
+                        </a>
+                  
+
+                   </li>
+            
+    
+                    
+                    <li>
+                        
+                       
+    
+                    </ul>
+    
+               
+    
+                  
+                </section>
+    
+            </nav>
+            
+            
+            <!--nav-end-->
+            <section id="dairy-product">
+                <!--heading----------->
+                <section class="product-heading">
+                    <h2 class = 'dairy-heading'>Dairy Products</h2>
+                </section>
+                <!--box-container------>
+                <section class="product-container">
+                    <!--box---------->
+                    <section class="product-box" style = "height: 95%;">
+                        <img alt="Milk" src="./images/milk.jpg">
+                        <h4>Milk</h4>
+                        <h5>$1.5</h5>
+                        <!--cart-btn------->
+                        <div class="item">
+                            <label> Milk (quantity): <input type="number" id="milk" min="0"></label>
+                            <button onclick="addItem('Milk', 'milk', 1.5)">Add</button>
+                        </div>
+                        <button id="save-fav" onclick="saveFavourite()">Save as Favourite</button>
+                        <button id="apply-fav" onclick="applyFavourite()">Apply Favourites</button>
+                        
+                      
+                    </section>
+                    <!--box---------->
+                    <section class="product-box">
+                        <img alt="cheese" src="./images/cheese 1.avif">
+                        <h4>Cheese</h4>
+                        <h5>$1</h5>
+                        <div class="item">
+                            <label> cheese (quantity): <input type="number" id="cheese" min="0"></label>
+                            <button onclick="addItem('cheese', 'cheese', 1)">Add</button>
+                        </div>
+                        <button id="save-fav" onclick="saveFavourite()">Save as Favourite</button>
+                        <button id="apply-fav" onclick="applyFavourite()">Apply Favourites</button>
+                     
+                    </section>
+                    <!--box---------->
+                    <section class="product-box" style="height: 95%;">
+                        <img alt="yoghurt" src="./images/yogurt.jpg">
+                        <h4>Youghurt</h4>
+                        <h5>$0.2</h5>
+                        <div class="item">
+                            <label> yoghurt (quantity): <input type="number" id="yoghurt" min="0"></label>
+                            <button onclick="addItem('yoghurt', 'Yoghurt', 0.2)">Add</button>
+                        </div>
+                        <button id="save-fav" onclick="saveFavourite()">Save as Favourite</button>
+                        <button id="apply-fav" onclick="applyFavourite()">Apply Favourites</button>
+                       
+                    </section>
+                    <!--box---------->
+                    <section class="product-box">
+                        <img alt="ice cream" src="./images/ice.webp">
+                        <h4>Ice-cream</h4>
+                        <h5>$0.3</h5>
+                        <div class="item">
+                            <label> ice cream (quantity): <input type="number" id="ice cream" min="0"></label>
+                            <button onclick="addItem('Ice cream', 'ice cream', 0.3)">Add</button>
+                        </div>
+                        <button id="save-fav" onclick="saveFavourite()">Save as Favourite</button>
+                        <button id="apply-fav" onclick="applyFavourite()">Apply Favourites</button>
+                        
+                       
+                       
+                    </section>
+                    <!--box---------->
+                    <section class="product-box">
+                        <img alt="butter" src="./images/butter.jpg">
+                        <h4>Butter</h4>
+                        <h5>$1</h5>
+                        <div class="item">
+                            <label> butter (quantity): <input type="number" id="butter" min="0"></label>
+                            <button onclick="addItem('Butter', 'butter', 1)">Add</button>
+                        </div>
+                        <button id="save-fav" onclick="saveFavourite()">Save as Favourite</button>
+                        <button id="apply-fav" onclick="applyFavourite()">Apply Favourites</button>
+                        
+                      
+                    </section>
+                    <!--box---------->
+                    <section class="product-box">
+                        <img alt="curd" src="./images/curd 2.webp">
+                        <h4>Curd</h4>
+                        <h5>$1</h5>
+                        <div class="item">
+                            <label> Curd (quantity): <input type="number" id="curd" min="0"></label>
+                            <button onclick="addItem('Curd', 'curd', 1)">Add</button>
+                        </div>
+                        <button id="save-fav" onclick="saveFavourite()">Save as Favourite</button>
+                        <button id="apply-fav" onclick="applyFavourite()">Apply Favourites</button>
+                       
+                    </section>
+                </section>
+            </section>
+            
+            <section id="order-summary">
+                <h2>Order Summary</h2>
+                <br>
+        
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody id="order-items">
+                        <!-- JavaScript will dynamically fill this section -->
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Total</td>
+                            <td id="total-price">$0.00</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <button id="buy-now" onclick="goToOrderConfirmation()">Buy Now</button>
+            </section>
+        
+              <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>About Us</h3>
+            <p>We are committed to providing fresh and high-quality groceries delivered to your doorstep.</p>
+        </div>
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="./fruits.html">Fruits</a></li>
+                <li><a href="./vegetables.html">Vegetables</a></li>
+                <li><a href="./meat and seafood.html">Meat & Seafood</a></li>
+                <li><a href="./dairy.html">Dairy</a></li>
+                <li><a href="./baking and cooking.html">Baking & Cooking</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <ul>
+                <li><i class="fas fa-phone-alt"></i> +1 234 567 890</li>
+                <li><i class="fas fa-envelope"></i> support@freshmart.com</li>
+                <li><i class="fas fa-map-marker-alt"></i> 123 Fresh Mart St, Cityville</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Fresh Mart. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+<script src="fruits.js"></script>
+            </body>
+            </html>
